@@ -7,3 +7,12 @@ availableValues:
   - insane
   - fast
   - normal
+conditions:
+  - version:
+      operator: semver-gt
+      semver: '2'
+    dependency:
+      flag: snakeGame.release
+      value: 'false'
+    value: normal
+value: insane
